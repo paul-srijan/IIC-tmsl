@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>IIC Tmsl</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="iiclogo" src="D:\WEB DEVELOPMENT\IIC TMSL\IIC_night.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      </a>
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-iic">About IIC</a></li>
+          <li class="nav-item"><a class="nav-link" href="#our-team">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact us</a></li>
+
+
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- home iic -->
+  <section id="title">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <img src="D:\WEB DEVELOPMENT\IIC TMSL\IIC2_night.png" class="iiclogofull" 0 alt="iiclogofull">
+          <div class="typing-container">
+            <p class="typing-text"></p>
+            <span class="typing-cursor"></span>
+          </div>
+
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <img class="startup-img" src="D:\WEB DEVELOPMENT\IIC TMSL\startup.jpg" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="about-iic">
+    <h1 class="heading">About IIC</h1>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 desc">
+          <p>Inspired by the objectives and vision of IIC, a MHRD initiative, we have established IIC TMSL. This cell will be conducting various innovation and entrepreneurship related activities along with organizing periodic workshops, seminars and
+            interactions with entrepreneurs and innovators. Students will get a chance to showcase their talents by participating in various events like Hackathons, idea competitions etc.</p>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <img class="about-iic-img" src="D:\WEB DEVELOPMENT\IIC TMSL\aboutiic.jpeg" alt="about-iic">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="our-team">
+    <h1 class="heading">Our Team</h1>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <img class="our-team-img" src="D:\WEB DEVELOPMENT\IIC TMSL\outteam.jpg" alt="about-iic">
+
+        </div>
+        <div class="col-lg-6 col-md-12 desc">
+          <p>IIC TMSL is currently working with 50+ members and 10 students co-ordinators. We also have some external members to guide us. Under any circumstances the team is there to support you and your innovative start-up idea to evolve into a business. We are there to help, build and grow a start-up ecosystem with your innovations & contributions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="press">
+    <img class="press-logo"src="D:\WEB DEVELOPMENT\IIC TMSL\iiccounternight.png" alt="press">
+  </section>
+
+
+  <footer id="footer">
+    <i class="social-icon fab fa-brands fa-twitter"></i>
+    <i class="social-icon fab fa-brands fa-facebook-f"></i>
+    <i class="social-icon fab fa-brands fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
+    <!-- <i class="far fa-envelope"></i> -->
+
+    <!-- <p class="copyright">© Copyright 2022 TinDog</p> -->
+    <p>© Copyright 2003 Paul</p>
+
+  </footer>
+
+
+  <!-- background bubble -->
+  <div class="bubble-container">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <!-- Add more divs for more bubbles -->
+  </div>
+
+
+</body>
+
+<script type="text/javascript">
+  const bubbles = document.querySelectorAll('.bubble');
+  bubbles.forEach(bubble => {
+    bubble.style.setProperty('--random', Math.random());
+  });
+</script>
+<script type="text/javascript">
+  const texts = ['Welcome to IIC TMSL.', 'Turn your ideas in Future.', 'Turn your ideas in Success.'];
+
+  let count = 0;
+  let index = 0;
+  let currentText = '';
+  let letter = '';
+
+  (function type() {
+    if (count === texts.length) {
+      count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector('.typing-text').textContent = letter;
+    if (letter.length === currentText.length) {
+      count++;
+      index = 0;
+    }
+    setTimeout(type, 200);
+  })();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,244 @@
+h1{
+  color: red;
+
+}
+body{
+  background-color: black;
+}
+.iiclogo{
+  width: 125px;
+  height: 50px;
+}
+.nav-item {
+  padding: 0 1rem;
+  /* padding: 20px; */
+}
+.nav-link {
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*  home iic*/
+
+
+.startup-img{
+  height: 100%;
+  width: 80%;
+  border-radius: 10%;
+  margin-top: 25px;
+}
+
+#title {
+  text-align: center;
+}
+
+.iiclogofull{
+  text-align: center;
+  justify-content:center;
+  height: 25%;
+  width: 85%;
+  margin-top: 250px;
+  /* padding-top: 100px; */
+}
+/* typing cursor */
+.typing-container {
+  position: relative;
+  margin-top: 25px;
+}
+.typing-text {
+  font-size: 40px;
+  color: white;
+}
+
+
+.typing-cursor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  background-color: white;
+  animation: cursor-blink 0.7s infinite;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.heading{
+  color: white;
+  text-align: center;
+}
+p{
+  color: white;
+  text-align: center;
+}
+/* about IIC */
+#about-iic{
+  text-align: center;
+  margin-top: 100px;
+}
+.about-iic-img{
+  height: 100%;
+  width: 50%;
+  border-radius: 15%;
+}
+/* our team */
+/**/
+#our-team{
+  text-align: center;
+  margin-top: 100px;
+
+}
+.our-team-img{
+  height: 75%;
+  width: 50%;
+  border-radius: 10%;
+}
+.desc{
+  margin-top: 5%;
+}
+/* press */
+.press-logo{
+  width: 100%;
+  /* margin: 20px 50px 20px; */
+}
+/* footer */
+#footer {
+  text-align: center;
+  padding: 0 15%;
+}
+.social-icon {
+  margin: 70% 10px;
+  color: white;
+}
+
+/* bubbles */
+.bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bubble {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+
+/* Customize the bubble size and position */
+.bubble:nth-of-type(1) {
+  width: 10px;
+  height: 10px;
+  top: 5%;
+  left: 5%;
+}
+
+.bubble:nth-of-type(2) {
+  width: 15px;
+  height: 15px;
+  top: 20%;
+  left: 20%;
+}
+
+.bubble:nth-of-type(3) {
+  width: 30px;
+  height: 30px;
+  top: 30%;
+  left: 30%;
+}
+
+.bubble:nth-of-type(4) {
+  width: 30px;
+  height: 30px;
+  top: 40%;
+  left: 40%;
+}
+.bubble:nth-of-type(5) {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+}
+.bubble:nth-of-type(6) {
+  width: 30px;
+  height: 30px;
+  top: 60%;
+  left: 60%;
+}
+.bubble:nth-of-type(7) {
+  width: 30px;
+  height: 30px;
+  top: 70%;
+  left: 70%;
+}
+.bubble:nth-of-type(8) {
+  width: 30px;
+  height: 30px;
+  top: 80%;
+  left: 80%;
+}
+.bubble:nth-of-type(9) {
+  width: 30px;
+  height: 30px;
+  top: 90%;
+  left: 90%;
+}
+.bubble:nth-of-type(10) {
+  width: 30px;
+  height: 30px;
+  top: 95%;
+  left: 95%;
+}
+.bubble:nth-of-type(11) {
+  width: 30px;
+  height: 30px;
+  top: 15%;
+  left: 15%;
+}
+.bubble:nth-of-type(12) {
+  width: 30px;
+  height: 30px;
+  top: 25%;
+  left: 25%;
+}
+.bubble:nth-of-type(13) {
+  width: 30px;
+  height: 30px;
+  top: 35%;
+  left: 35%;
+}
+
+/* Add more styles for more bubbles */
+@media (max-width:970px) {
+  .title{
+    text-align: center;
+  }
+  .iiclogofull{
+    margin-top: 50px;
+    height: 40%;
+    width: 55%;
+  }
+
+}
